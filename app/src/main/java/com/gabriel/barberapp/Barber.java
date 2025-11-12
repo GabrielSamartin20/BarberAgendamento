@@ -6,7 +6,7 @@ public class Barber {
         private String especialidade;
         private int fotoId;
 
-        // Construtor
+       
         public Barber(String nome, String especialidade, int fotoId) {
             this.nome = nome;
             this.especialidade = especialidade;
