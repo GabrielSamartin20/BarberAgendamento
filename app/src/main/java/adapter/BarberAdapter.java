@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.gabriel.barberapp.R;
+import com.gabriel.Activities.R;
 import java.util.List;
 import Singleton.GerenciarDados;
 import model.Barber;
