@@ -1,19 +1,17 @@
 package adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.gabriel.barberapp.R;
-
 import java.util.List;
-
+import Singleton.GerenciarDados;
 import model.Barber;
 
 public class BarberAdapter extends RecyclerView.Adapter<BarberAdapter.BarberViewHolder> {
@@ -44,17 +42,12 @@ public class BarberAdapter extends RecyclerView.Adapter<BarberAdapter.BarberView
             holder.tvSpecialty.setText(barber.getEspecialidade());
             holder.ivPhoto.setImageResource(barber.getFotoId());
 
-            // Ação de clique no item
+
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // Aqui vamos colocar a lógica para ir para a Tela 2
-                    // Por enquanto, vamos deixar um espaço reservado
+                    GerenciarDados.getInstance().setNomeDoBarbeiro(barber.getNome());
 
-                    // Exemplo (VAMOS IMPLEMENTAR DEPOIS):
-                    // Intent intent = new Intent(mContext, BookingActivity.class);
-                    // intent.putExtra("BARBER_NAME", barber.getName());
-                    // mContext.startActivity(intent);
                 }
             });
         }
