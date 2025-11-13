@@ -1,14 +1,16 @@
-package com.gabriel.barberapp;
+package com.gabriel.Activities;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
+import com.gabriel.barberapp.R;
 import java.util.ArrayList;
 import java.util.List;
+import model.Barber;
 
-        public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
             private RecyclerView recyclerViewBarbers;
             private BarberAdapter barberAdapter;

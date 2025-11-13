@@ -1,17 +1,22 @@
-package com.gabriel.barberapp;
+package adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.gabriel.barberapp.R;
+
 import java.util.List;
 
-    public class BarberAdapter extends RecyclerView.Adapter<BarberAdapter.BarberViewHolder> {
+import model.Barber;
+
+public class BarberAdapter extends RecyclerView.Adapter<BarberAdapter.BarberViewHolder> {
 
         private Context mContext;
         private List<Barber> mBarberList;
