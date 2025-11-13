@@ -8,6 +8,8 @@ import android.os.Bundle;
 import com.gabriel.barberapp.R;
 import java.util.ArrayList;
 import java.util.List;
+
+import adapter.BarberAdapter;
 import model.Barber;
 
 public class MainActivity extends AppCompatActivity {
