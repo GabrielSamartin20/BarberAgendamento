@@ -1,11 +1,11 @@
-package com.gabriel.Activities;
+package com.gabriel.BarberApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
-import com.gabriel.barberapp.R;
+import com.gabriel.BarberApp.R;
 
 import java.util.ArrayList;
 import java.util.List;

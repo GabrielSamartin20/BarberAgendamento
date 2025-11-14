@@ -1,4 +1,4 @@
-package com.gabriel.Activities;
+package com.gabriel.BarberApp;
 
 import android.content.Context;
 

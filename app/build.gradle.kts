@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.gabriel.Activities"
+    namespace = "com.gabriel.BarberApp"
     compileSdk {
         version = release(36)
     }
