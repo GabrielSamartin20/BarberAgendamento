@@ -1,4 +1,4 @@
-package com.gabriel.barberapp;
+package model;
 
 public class Barber {
 
@@ -14,23 +14,27 @@ public class Barber {
         }
 
     public String getNome() {
-        return nome;
+
+            return nome;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+
+            this.nome = nome;
     }
 
     public String getEspecialidade() {
-        return especialidade;
+
+            return especialidade;
     }
 
     public void setEspecialidade(String especialidade) {
-        this.especialidade = especialidade;
+
+            this.especialidade = especialidade;
     }
 
     public int getFotoId() {
-        return fotoId;
+            return fotoId;
     }
 
     public void setFotoId(int fotoId) {

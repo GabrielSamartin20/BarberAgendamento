@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-                setContentView(com.gabriel.barberapp.R.layout.activity_main);
+                setContentView(com.gabriel.BarberApp.R.layout.activity_main);
 
 
                 initBarberList();

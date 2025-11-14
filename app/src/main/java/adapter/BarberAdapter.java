@@ -1,6 +1,7 @@
 package adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,9 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.gabriel.BarberApp.AgendamentoActivity;
 import com.gabriel.BarberApp.R;
 import java.util.List;
 import Singleton.GerenciarDados;
+import model.Agendamento;
 import model.Barber;
 
 public class BarberAdapter extends RecyclerView.Adapter<BarberAdapter.BarberViewHolder> {
@@ -45,7 +48,9 @@ public class BarberAdapter extends RecyclerView.Adapter<BarberAdapter.BarberView
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    GerenciarDados.getInstance().setNomeDoBarbeiro(barber.getNome());
+                    GerenciarDados.getInstance().getAgendamentoAtual().setBarbeiro(barber);
+                    Intent intent = new Intent(mContext, AgendamentoActivity.class);
+                    mContext.startActivity(intent);
 
                 }
             });
