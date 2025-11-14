@@ -1,4 +1,4 @@
-package model;
+package com.gabriel.barberapp;
 
 public class Barber {
 
@@ -6,6 +6,7 @@ public class Barber {
         private String especialidade;
         private int fotoId;
 
+       
         public Barber(String nome, String especialidade, int fotoId) {
             this.nome = nome;
             this.especialidade = especialidade;
