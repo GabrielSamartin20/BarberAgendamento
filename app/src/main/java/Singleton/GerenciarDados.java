@@ -25,4 +25,7 @@ public class GerenciarDados {
     }
 
 
+    public void resetarAgendamento() {
+        agendamentoAtual = new Agendamento();
+    }
 }

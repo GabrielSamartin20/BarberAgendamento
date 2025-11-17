@@ -55,7 +55,8 @@ public class AgendamentoActivity extends AppCompatActivity {
                     Toast.makeText(AgendamentoActivity.this, "Por favor, escolha data E horário.", Toast.LENGTH_SHORT).show();
                 } else {
 
-                    Toast.makeText(AgendamentoActivity.this, "Pronto para confirmar!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(AgendamentoActivity.this, ConfirmacaoActivity.class);
+                    startActivity(intent);
 
                 }
             }
